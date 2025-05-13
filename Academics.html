@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>Bright Junior School </title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ALL VERSION CSS -->
+    <link rel="stylesheet" href="css/versions.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="host_version"> 
+
+	<!-- Modal -->
+	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header tit-up">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">Customer Login</h4>
+			</div>
+			<div class="modal-body customer-box">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs">
+					<li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+					<li><a href="#Registration" data-toggle="tab">Registration</a></li>
+				</ul>
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div class="tab-pane active" id="Login">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email1" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="exampleInputPassword1" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-10">
+									<button type="submit" class="btn btn-light btn-radius btn-brd grd1">
+										Submit
+									</button>
+									<a class="for-pwd" href="javascript:;">Forgot your password?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="tab-pane" id="Registration">
+						<form role="form" class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" placeholder="Name" type="text">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="email" placeholder="Email" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="mobile" placeholder="Mobile" type="email">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<input class="form-control" id="password" placeholder="Password" type="password">
+								</div>
+							</div>
+							<div class="row">							
+								<div class="col-sm-10">
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Save &amp; Continue
+									</button>
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Cancel</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </div>
+	</div>
+
+    <!-- LOADER -->
+	<!-- <div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div> -->
+	<!-- END LOADER -->	
+
+    <!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4c5a7d;">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html" style="display: flex; align-items: center; justify-content: center;">
+					<img src="images/schoollogo.png" alt="" style="width: 70px; height: 70px;"/>
+					<h2 style="font-size: 30px; font-weight: bold; color: white; margin-top: 10px; margin-left: 10px;">BRIGHT JUNIOR SCHOOL WAKISO</h2>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-host">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+						<li class="nav-item active dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">School info </a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								
+								<a class="dropdown-item" href="Academics.html">Academics </a>
+								<a class="dropdown-item" href="Curicular.html">Co-curricular activities </a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery</a></li>
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log" href="#" data-toggle="modal" data-target="#login"><span>Apply Now</span></a></li>
+                    </ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<div class="all-title-box">
+		<div class="container text-center">
+			<h1>School Academics<span class="m_1"></span></h1>
+		</div>
+	</div>
+	
+    <div id="overviews" class="section wb">
+        <div class="container">
+            <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+					<h3>Academics</h3>
+					<p class="lead">Here is how our school has been performing in the Primary Leaving Exams(PLE) in the last five years:</p>
+                </div>
+            </div><!-- end title -->
+			<div class="container-table">
+				<table class="content-table">
+					<thead>
+						<tr>
+							<th>Year</th>
+							<th>1st grade</th>
+							<th>2nd grade</th>
+							<th>3rd grade</th>
+							<th>Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>2023</td>
+							<td>47</td>
+							<td>9</td>
+							<td>0</td>
+							<td>56</td>
+						</tr>
+						<tr>
+							<td>2022</td>
+							<td>50</td>
+							<td>2</td>
+							<td>0</td>
+							<td>52</td>
+						</tr>
+						<tr>
+							<td>2021</td>
+							<td>31</td>
+							<td>15</td>
+							<td>4</td>
+							<td>50</td>
+						</tr>
+						<tr>
+							<td>2020</td>
+							<td>40</td>
+							<td>10</td>
+							<td>0</td>
+							<td>50</td>
+						</tr>
+						<tr>
+							<td>2019</td>
+							<td>25</td>
+							<td>20</td>
+							<td>5</td>
+							<td>50</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+					<h3>School Curriculum</h3>
+                    <p class="lead">Our schools operate two sections; the pre-primary section and the primary section. Each of these sections is carefully handled for its learners to achieve big.
+
+						The pre-primary sections have teams of well-trained persons that monitor the individual progress of each child through diagnosing the learning difficulties before providing all the necessary assistance.
+						
+						The pupils are taught; Math concepts, General Knowledge, Drawing, Singing, Motor Control, Reading, Handwriting among others, which prepare them for the next level of education.
+						
+						The primary section operate basing on the Uganda Primary School Curriculum which is presented in three cycles i.e. Lower Primary, Transition and Upper primary Curriculums. This is done to enable learners to develop competences and life skills for lifelong learning.
+						
+						We not only concentrate on the teaching of the core subjects as per the curriculum but also ensure that our children are engaged in other learning aspects like debates, scouting and guiding, reading competitions, swimming, music dance and drama, games and sports among others. All this prepares our children for a fruitful future after primary.
+						
+						Our children are also given etiquette lessons that enable them to learn how to live morally upright with other people in the society. We have respect for each child’s religion as we allow and fully facilitate the participation of children in their different religious norms timely. Children are trained to grow with respect for the creator
+					</p>
+                </div>
+            </div><!-- end title -->
+
+			<div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+					<h3>School Fees Structure</h3>
+                </div>
+            </div><!-- end title -->
+
+			<div class="container-table">
+				<table class="content-table">
+					<thead>
+						<tr>
+							<th>Class</th>
+							<th>School Fees(UGX)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Primary One(1)</td>
+							<td>470,000</td>
+							
+						</tr>
+						<tr>
+							<td>Primary Two(2)</td>
+							<td>500,000</td>
+						</tr>
+						<tr>
+							<td>Primary Three(3)</td>
+							<td>540,000</td>
+						</tr>
+						<tr>
+							<td>Primary Four(4)</td>
+							<td>620,000</td>
+						</tr>
+						<tr>
+							<td>Primary Five(5)</td>
+							<td>620,000</td>
+						</tr>
+						<tr>
+							<td>Primary Six(6)</td>
+							<td>620,000</td>
+						</tr>
+						<tr>
+							<td>Primary Seven(7)</td>
+							<td>680,000</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+            <hr class="invis"> 
+
+            <!-- <div class="row"> 
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_1.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Engineering</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets geuiat operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
+							</div>
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
+							</ul>
+						</div>
+					</div> -->
+                </div><!-- end col -->
+
+                <!-- <div class="col-lg-4 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_2.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Hotel Management</a></h2>
+							</div>
+							<div class="blog-desc">
+								<p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets geuiat operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
+							</div>
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
+							</ul>
+						</div>
+					</div> -->
+                </div><!-- end col -->	
+				
+				<!-- <div class="col-lg-4 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_3.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Biotechnology</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets geuiat operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
+							</div>
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
+							</ul>
+						</div>
+					</div> -->
+                </div><!-- end col -->
+            </div><!-- end row -->			
+			
+			<hr class="hr3"> 
+			
+            <!-- <div class="row"> 
+				<div class="col-lg-4 col-md-6 col-12">
+                   <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_4.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Medical Sciences</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets geuiat operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
+							</div>
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
+							</ul>
+						</div>
+					</div> -->
+                </div><!-- end col -->
+				
+                <!-- <div class="col-lg-4 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_5.jpg" alt="" class="img-fluid">
+						</div>		
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Finance</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets geuiat operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
+							</div>
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
+							</ul>
+						</div>
+					</div> -->
+                </div><!-- end col -->
+
+                <!-- <div class="col-lg-4 col-md-6 col-12">
+                    <div class="course-item">
+						<div class="image-blog">
+							<img src="images/blog_6.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="course-br">
+							<div class="course-title">
+								<h2><a href="#" title="">Fashion Designing</a></h2>
+							</div>
+							<div class="course-desc">
+								<p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets geuiat operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
+							</div>	
+							<div class="course-rating">
+								4.5
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star"></i>	
+								<i class="fa fa-star-half"></i>								
+							</div>
+						</div>
+						<div class="course-meta-bot">
+							<ul>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
+							</ul>
+						</div>
+					</div> -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>About US</h3>
+                        </div>
+                        <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>
+                        <div class="footer-right">
+							<ul class="footer-links-soi">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-github"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							</ul><!-- end links -->
+						</div>
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+				<div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Information Link</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="Academics.html">School info</a></li>
+							<li><a href="Gallery.html">Gallery</a></li>
+							<li><a href="contact.html">Contact</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Contact Details</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">info@brightjunior.sc</a></li>
+                            <li><a href="#">www.brightjunior.com</a></li>
+                            <li>PO Box 16122 Kampala</li>
+                            <li>+256 705435811</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+				
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+                <div class="footer-center">                   
+                    <p class="footer-company-name">All Rights Reserved. &copy; 2024<a href="#">Bright Junior School Wakiso</a>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+
+</body>
+</html>
